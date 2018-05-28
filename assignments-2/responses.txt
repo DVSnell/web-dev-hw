@@ -1,0 +1,15 @@
+Briefly describe one way how data travels on the internet.
+
+Information is broken up into data packets at the source computer and sent to a local router and network, typically an ISP.  The packets then travel down a usually non-direct path via the interconnected networks that make up the internet. This path is distributed to allow for fault protection and traffic congestion.  Each packet contains information detailing what it is and both where it is coming from and where it is going.  Upon reaching their destination's local network, they are routed to the specific recipient's computer.  When the packets reach the recipient, even if out of order, they assemble back into readable information.
+
+What is the relationship between IP address and the DNS?
+
+IP addresses are the unique identifiers for devices and services connected to the internet while DNS is a system used to cross-reference those addresses with a URL.  If the DNS acts as a phone book, then IP adresses are the numbers while their URL is the name of the phone number's owner.
+
+What is a cookie?
+
+A cookie is a file written to your machine after visiting a site that allows you to store site-specific information such as settings or log in information.  They are useful when validating a user connecting to the site multiple times.
+
+List the three basic parts of a URL.
+
+Protocol, Domain Name, and Path.
