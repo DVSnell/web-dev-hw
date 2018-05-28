@@ -6,4 +6,4 @@ My [respones to Assignment 2](./responses.txt).
 
 For my work cycle I went step by step through the list on the moodle assignment page, doing each in turn.  I used the Windows Snipping Tool for my screenshots but ran into a small problem with Atom as a text editor.  It was removing spaces in my responses.txt file.  I circumvented the problem by using Notepad to finish the file.  I later went back and saw that Atom's Soft Wrap was disabled by default and have since turned it on.  I then published everything to Github.
 
-![Screenshot for Assignment 2](./images/a2_screenshot.png)
+![Screenshot for Assignment 2](./images/a2_screenshot.PNG)
