@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="How to Make a Starfield in Photoshop">
+    <meta name="author" content="Don-Vincent Snell">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making a Starfield in Photoshop</title>
+    <style>
+      body {
+        background-color: black;
+        font-family: Arial;
+        margin-top: 50px;
+        }
+      .navbar {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width:100%
+        }
+      .navbar a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+      .navdrop {
+        float: left;
+        overflow: hidden;
+        }
+      .navdrop .dropb {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: black;
+        padding: 14px 14px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        }
+      .navbar a:hover, .navdrop:hover .dropb {
+        background-color: black;
+        color: white;
+        }
+      .drop-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 180px;
+        z-index: 1;
+        }
+      .drop-content a {
+        float: none;
+        color: black;
+        padding: 14px 14px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        }
+      .drop-content a:hover {
+        background-color: black;
+        }
+      .navdrop:hover .drop-content {
+        display: block;
+        }
+      .breaks {
+        color: white;
+        text-align: center;
+        }
+      .img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+      .capt {
+        text-align: center;
+        }
+      .infoblock {
+        background-color: lightgray;
+        width: 800px;
+        margin: auto;
+        padding: 5px;
+        text-align: left;
+        }
+      .protips {
+        background-color: gray;
+        width: 700px;
+        margin: auto;
+        padding: 15px;
+        font-family: Arial;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="header" class="breaks">
+      <img src="./images/starfield.jpg" alt="An image of a starfield with colorful nebula gasses." title="Starfield Example" width="960" height="540" class="img" />
+      <div id="floatingbar" class="navbar">
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./pages/about.html">About Me</a>
+          <a href="./pages/contact.html">Contact</a>
+          <div id="dropdown" class="navdrop">
+            <button class="dropb">Instruction Navigation</button>
+              <div id="button-links" class="drop-content">
+                <a href="#title-1">Introduction</a>
+                <a href="#title-2">Photoshop Prep</a>
+                <a href="#title-3">Technique</a>
+                <a href="#title-4">Finishing Touches</a>
+              </div>
+          </div>
+          <a href="#">Return to Top</a>
+        </nav>
+      </div>
+      <h1>How to make a Starfield in Photoshop</h1>
+      <h2>By Don-Vincent Snell</h2>
+    </div>
+    <div id="title-1" class="breaks">
+      <h3>Introduction</h3>
+    </div>
+    <div id="intro" class="infoblock">
+      <p>Welcome to my tutorial on how to make starfield like the one above using Adobe Photoshop.  It also uses older tools and methods, so it should work in even out-dated versions of Photoshop or even similar graphics programs, at least on a informational level.  I designed it for all skill levels so even if this is the first time you've started up Photoshop, dive right in.  I hope you find it useful, informative, and fun.</p>
+    </div>
+    <div id="requirements" class="infoblock">
+      <h4>Required Materials</h4>
+      <p>Before we begin, there's a few things you'll need and I've listed them below.</p>
+      <ol>
+        <li>A computer capable of running Photoshop</li>
+        <li>Photoshop (I've tested it from CS2 on up)</li>
+        <li>A desire to go to SPAAAAACE! (At least on the digital art-level.)</li>
+      </ol>
+      <p>And that's it.  Pretty simple requirements.</p>
+    </div>
+    <div id="title-2" class="breaks">
+      <h2>Photoshop Prep - T-Minus 10 Minutes to Blast Off!</h2>
+    </div>
+    <div id="inst-1" class="infoblock">
+      <p><b>1.</b> Before we get into space, we'll have to make our document and create some layers.  With Photoshop open, go ahead and create a new document.  Your document requires a few specific settings to get the best results.  First, make sure you're working in the <strong>8 bit RGB Color Mode</strong>.  Set the <strong>Background Contents</strong> to <strong>Black</strong>.</p>
+      <p>The rest is all up to you.  I will be using an image size of <b>1920 x 1080 pixels at 150 DPI</b> but you can choose any width, height, and resolution you desire.  Hit <strong>OK</strong> and we're off to the races.</p>
+        <img class="img" src="./images/starting.jpg" alt="The starting screenshot of our project." title="The first steps..." width="800" height="435" />
+        <p class="capt"><i>The first steps...</i></p>
+      <br />
+      <p class="protips"><b>Pro-Tip:</b><br />The DPI setting alters how certain effects like blur and glow work. Having a lower setting typically requires a smaller effect setting while a higher resolution requires larger effect settings.  I find working at 150 - 300 DPI deliver the best results with minimal tweaking.</p>
+      <p><b>2.</b> Now that we've got our document, we'll start setting up our <em>Star layers</em>.  Go ahead and <strong>copy</strong> the <em>Background</em> layer so we have a second black layer.  <strong>Rename</strong> this layer <em>Base Far</em>.  <strong>Create</strong> a new, blank layer right above it and <strong>rename</strong> it <em>Stars Far</em>.</p>
+        <img class="img" src="./images/layers-1.jpg" alt="A screenshot of the current layer stack" title="Our first layers." width="350" height="511"/>
+        <p class="capt"><i>Our first layers.</i></p>
+      <br />
+      <p class="protips"><b>Pro-Tip:</b><br />1. You can create new layers by clicking the "Create a new layer" button at the bottom of the layer panel.<br />2. You can copy a layer or multiple layers by dragging them to the "Create a new layer" button.<br />3. Renaming a layer is easy if you just double click the name of the layer in the stack.</p>
+      <br />
+        <img class="img" src="./images/create-layer.jpg" alt="A screenshot of the create layer button" title="One of a Photoshop artist's best friend." width="515" height="94" />
+        <p class="capt"><i>One of a Photoshop artist's best friend.</i></p>
+      <p><b>3.</b> Since black and white space is kind of boring, let's do some prep for adding color later.  <strong>Create</strong> another blank layer and call it <em>Nebula Color</em>.  <strong>Copy</strong> our <em>Base Far</em> layer and move the copy to the top of the layer stack.  <strong>Rename</strong> this one to <em>Nebula Clouds</em> and <strong>set the blending mode</strong> to <strong>Color Dodge</strong>.  Then <strong>hide</strong> these two layers.  We'll be getting to them in a while.  But now we're all set to blast off!</p>
+        <img class="img" src="./images/layers-2.jpg" alt="A screenshot of the current layer stack" title="Our current layers." width="350" height="300"/>
+        <p class="capt"><i>Our current layers.</i></p>
+      <br />
+      <p class="protips"><b>Pro-Tip:</b><br />Any new layer you make is placed above your currently selected layer or at the top of the stack if there is no layer selected. You can hide a layer by clicking on the eye next to the layer in the stack.</p>
+      <br />
+    </div>
+    <div id="title-3" class="breaks">
+      <h2>Technique - Full Power to the Engines!</h2>
+    </div>
+    <div id="inst-2" class="infoblock">
+      <p><b>1.</b> Select the <em>Base Far</em> layer and let's <strong>Add Noise</strong> from the <strong>Filter</strong> menu.  We'll want to <strong>set the Amount to 400% and the distribution to Gaussian</strong>.  Make sure the <strong>tickbox near Monochromatic is active</strong>.  Hit <strong>OK</strong> and Behold!  A staticy mess.  But we can work with this, after we make some buddies for it.</p>
+        <img class="img" src="./images/noise-menu.jpg" alt="A screenshot of where you can find the gaussian noise menu" title="Well that looks nothing like a starfield." width="350" height="303" />
+        <p class="capt"><i>Well that looks nothing like a starfield.</i></p>
+        <img class="img" src="./images/gaussian.jpg" alt="A screenshot of the gaussian noise dialog" title="The Guassian Noise Dialog" width="350" height="496" />
+        <p class="capt"><i>The Guassian Noise Dialog</i></p>
+      <p class="protips"><b>Pro-Tip:</b><br />We use Gaussian noise since the other option, Uniform, creates too clean of a distribution in the later stages.  Gaussian allows for clumping which we're going to use to our advantage when we start giving our stars different effects.  Ticking Monochromatic allows you keep the stars white which will play into how colors effect it in the end, but you can choose to untick it for some colorized stars with interesting appearances.</p>
+      <p><b>2.</b> Select both the <em>Base Far</em> and <em>Stars Far</em> layers and <strong>copy them twice</strong>.  <strong>Rename</strong> the <em>Stars Far copies</em> to <em>Stars Middle</em> and <em>Stars Close</em> and <strong>rename</strong> the <em>Base Far copies</em> to <em>Base Middle</em> and <em>Base Close</em>.  <strong>Hide</strong> the <em>Middle</em> and <em>Close</em> layers so we're left with our original <em>Stars Far</em> and <em>Base Far</em>.  We're now ready to declutter our sky a bit.</p>
+        <img class="img" src="./images/layers-3.jpg" alt="A screenshot of the current layer stack" title="Simple in its own way." width="350" height="324"/>
+        <p class="capt"><i>Simple in its own way.</i></p>
+      <p><b>3.</b> First up, let's select the <em>Base Far</em> layer and <strong>Blur</strong> it up.  We'll want to use the <strong>Gaussian Blur</strong> option.  That option will become our close friend as we move forward.  These stars are going to be are smallest and farthest, so we don't need much blur.  Let's <strong>set the Radius to .5</strong> which will soften and slightly dim what we're looking at.</p>
+        <img class="img" src="./images/blur-menu.jpg" alt="A screenshot of where you can find the Gaussian Blur dialog" title="After this project, go play around in this menu." width="350" height="373"/>
+        <p class="capt"><i>After this project, go play around in this menu.</i></p>
+        <img class="img" src="./images/blur.jpg" alt="A screenshot of the Gaussian Blur dialog" title="Such a simple dialog, but so powerful" width="350" height="368"/>
+        <p class="capt"><i>Such a simple dialog, but so powerful</i></p>
+      <p><b>4.</b> Next, let's thin things out a bit.  With the <em>Base Far</em> layer selcted, lets make some <strong>Adjustments</strong> to it's <strong>Levels</strong> from the <strong>Image</strong> menu.  We'll want to <strong>set the Black Point to 200 and the Grey point to .4</strong>.  Looks a little bit more like the void we know and love.  Let's call on another <strong>Gaussian Blur</strong> with a <strong>radius of .5</strong> to help dim our distant buddies a bit more we're suddenly a whole lot closer to where we need to be.</p>
+        <img class="img" src="./images/levels-menu.jpg" alt="A screenshot of where you can find the Levels dialog" title="We're gonna be coming back here a few times." width="350" height="102"/>
+        <p class="capt"><i>We're gonna be coming back here a few times.</i></p>
+        <img class="img" src="./images/levels-far.jpg" alt="A screenshot of the levels dialog for our far stars." title="Like a spooky cyberpunk city." width="350" height="313"/>
+        <p class="capt"><i>Like a spooky cyberpunk city.</i></p>
+        <img class="img" src="./images/star-far.jpg" alt="A screenshot of the far stars." title="Quite space-ish." width="500" height="292"/>
+        <p class="capt"><i>Quite space-ish.</i></p>
+      <p><b>5.</b> Let's <strong>hide</strong> the <em>Base Far</em> layer and replicate the effect on <em>Base Middle</em> with some slight alterations.  First, select the <em>Base Middle</em> layer and <strong>unhide</strong> it.  Set the first <strong>Gaussian Blur radius to 1</strong>, making our stars a bit dimmer, but larger.  This will also change the levels arrangement a bit so we'll need different settings.  We need less stars as these middle ones are supposed to be closer to us with less density.  I used a <strong>black point of 200, a grey point of .2, and a white point of 215</strong>.  A second <strong>Blur of .5</strong> is perfect for this particular image.</p>
+        <img class="img" src="./images/levels-middle.jpg" alt="A screenshot of the levels dialog for our middle stars." title="Nice ski slope." width="350" height="316"/>
+        <p class="capt"><i>Nice ski slope.</i></p>
+        <img class="img" src="./images/star-middle.jpg" alt="A screenshot of the middle stars." title="Kinda space-ish." width="500" height="289"/>
+        <p class="capt"><i>Kinda space-ish.</i></p>
+      <p><b>6.</b> Go ahead and <strong>hide</strong> the <em>Base Middle</em> layer now and repeat the steps with <em>Base Close</em> with the appropriate tweaks.  We want our closest stars to be large, so a <strong>blur radius of 2</strong> is best.  The levels have to be tighter so we have brighter but fewer stars.  I used a <strong>black point of 173, a grey point of .5, and a white point of 17</strong>9 for our closer friends.  The second <strong>Blur looked good at 1</strong> so that is the setting I used.</p>
+        <img class="img" src="./images/levels-close.jpg" alt="A screenshot of the levels dialog for our closest stars." title="The Coneheads came from France." width="350" height="314"/>
+        <p class="capt"><i>The Coneheads came from France.</i></p>
+        <img class="img" src="./images/star-close.jpg" alt="A screenshot of the closest stars." title="Not very space-ish." width="500" height="291"/>
+        <p class="capt"><i>Not very space-ish.</i></p>
+      <p class="protips"><b>Pro-Tip:</b><br />These are the steps where you can play around a bit more.  Various levels values will change the density and brightness of stars, while blur will alter their softness and brightness.  Feel free to experiment so you can get the look you want.</p>
+      <p><b>7.</b> Hey, remember those <em>Stars layers</em> we've been neglecting?  Kind of funny that we're supposed to be making stars and haven't touched those empty layers.  Let's fix that.  Since we have <em>Base Close</em> selected let's start with that one.  Next to the <strong>Layers</strong> tab there is the <strong>Channels</strong> tab.  We're going to pull some data from here and use it back in the Layers section.  With <strong>all four of the Channel layers selected</strong> and not hidden, <strong>click the little broken circle "Load channel as selection" button</strong> at the bottom of the panel.  You'll see some marching ants on the image as the path information is turned into a selection.  Go back to the <strong>Layer panel</strong> and select the <em>Stars Close</em> layer.  Make sure its unhidden before <strong>filling the layer</strong> with <strong>white</strong> using the <strong>Fill command</strong> from the <strong>Edit menu</strong>.  Set the <strong>Contents</strong> on the fill dialog to <strong>White</strong> and hit <strong>OK</strong>.  <strong>Drop the selection</strong> using the <strong>Deselect command</strong> from the <strong>Select menu</strong>.  <strong>Hide</strong> the <em>Base Close</em> layer to make sure the <em>Stars Close</em> layer is <strong>visible</strong> against the black background.</p>
+        <img class="img" src="./images/channels.jpg" alt="A screenshot of the channels panel" title="A little detour from the layers panel." width="350" height="126"/>
+        <p class="capt"><i>A little detour from the layers panel.</i></p>
+        <img class="img" src="./images/channel-select.jpg" alt="A screenshot showing the load selection button in the channels panel" title="A good way to harvest data to use elsewhere." width="350" height="66"/>
+        <p class="capt"><i>A good way to harvest data to use elsewhere.</i></p>
+        <img class="img" src="./images/fill-menu.jpg" alt="A screenshot showing where to find the fill menu" title="A whole lot of things that look familiar." width="350" height="375"/>
+        <p class="capt"><i>A whole lot of things that look familiar.</i></p>
+        <img class="img" src="./images/fill-dialog.jpg" alt="A screenshot showing the fill dialog." title="Useful for more than just solid colors." width="350" height="189"/>
+        <p class="capt"><i>Useful for more than just solid colors.</i></p>
+        <img class="img" src="./images/deselect-menu.jpg" alt="A screenshot showing how to deselect something." title="Ctrl+D is your friend." width="350" height="152"/>
+        <p class="capt"><i>Ctrl+D is your friend.</i></p>
+      <p><b>8.</b> Repeat the previous steps for the <em>Middle</em> and <em>Far</em> layers.  When you've finished you can <strong>delete</strong> the <em>Base</em> layers as they are no longer needed by <strong>selecting them and clicking the trash can "Delete layer" button</strong>.  You should now see all our stars of various distances against a black background.  And there is our simple starfield.  But let's liven things up a bit.</p>
+        <img class="img" src="./images/delete.jpg" alt="A screenshot showing where to find the delete layer button" title="Make extra sure before going crazy with this button." width="350" height="56"/>
+        <p class="capt"><i>Make extra sure before going crazy with this button.</i></p>
+        <img class="img" src="./images/layers-4.jpg" alt="A screenshot of the current layer stack" title="An updated Layer stack." width="350" height="248"/>
+        <p class="capt"><i>An updated Layer stack.</i></p>
+        <img class="img" src="./images/stars-black.jpg" alt="A screenshot of the current starfield" title="Now we're cooking with hydrogen plasma." width="500" height="289"/>
+        <p class="capt"><i>Now we're cooking with hydrogen plasma.</i></p>
+    </div>
+    <div id="title-4" class="breaks">
+      <h2>Finishing Touches - They've Gone To Plaid!</h2>
+    </div>
+    <div id="inst-3" class="infoblock">
+      <p><b>1.</b> <strong>Unhide</strong> the <em>Nebula</em> layers we made way at the beginning and select <em>Nebula Cloud</em>.  Go up to the <strong>Filter menu</strong> and choose to <strong>Render</strong> a layer of <strong>Clouds</strong>.  Because we set the <strong>blending mode</strong> of the <em>Nebula Cloud</em> to <strong>Color Dodge</strong> we'll see a considerable jump up in brightness in a few areas of our image.  This helps seperate things out a bit but also sets us up for a bit of fun with color.</p>
+      <img class="img" src="./images/clouds-menu.jpg" alt="A screenshot of where to find the clouds render" title="This will kick it up a notch." width="350" height="374"/>
+      <p class="capt"><i>This will kick it up a notch.</i></p>
+      <img class="img" src="./images/stars-bright.jpg" alt="A screenshot of the starfield brightened by the clouds" title="Theres that notch." width="500" height="288"/>
+      <p class="capt"><i>Theres that notch.</i></p>
+      <p class="protips"><b>Pro-Tip:</b><br />It's worth noting that the Clouds render is dependent on the size of the image.  A larger image will have more areas of variability than a smaller image.  You can always enlarge and move the cloud layer if you are working with a larger image but want less variability.</p>
+      <p><b>2.</b> What we have is nice, but its missing a bit of panache.  Select the <em>Nebula Color</em> layer and choose the <strong>Brush tool</strong>.  Open the <strong>Brush Settings panel</strong> and choose the <strong>Soft Round 30 brush</strong>.  Choose a very large brush size.  I chose <strong>900 px</strong>.  Next ensure that the only setting ticked is <strong>Smoothing</strong> and that the <strong>Hardness is set to 0%</strong>.  At the top of the window, <strong>set your opacity to 10% and your flow to 33%</strong>.  You can mess around with these settings a lot to get your look, but these settings give a good baseline.  Now choose a color and start painting.  Hydrogen is extremely common in space so I picked a slightly pinkish red to start.  I laid down a few strokes and used a total of four colors to get the effect I was looking for, <strong>a red at 255/0/42, a blue at 0/108/255, a green at 0/255/90, and a yellow at 255/255/0</strong>.  I made sure to leave some black, but you can go nuts if you want a real heart of the nebula look.</p>
+      <img class="img" src="./images/brush-settings.jpg" alt="A screenshot of our brush settings" title="Another well-known friend." width="350" height="644"/>
+      <p class="capt"><i>Another well-known friend.</i></p>
+      <img src="./images/stars-color.jpg" alt="A color image of the stars." title="Nearly there" width="500" height="292" class="img" />
+      <p class="capt"><i>Nearly there</i></p>
+      <p><b>3.</b> Stars are supposed to glow and thankfully, Photoshop has the perfect preset for it.  Select the <em>Stars Middle</em> layer and open up the <strong>Layer Style</strong> panel from the <strong>Layer menu</strong> by clicking on the <strong>Outer Glow option</strong>.  We want the glow to match the stars base appearance so <strong>set the Blend Mode to Normal and the opacity to 75%</strong>.  Ensure the <strong>Noise is set to 0% and set the color to white</strong>.  The <strong>Technique should be set to Softer with a spread of 0%</strong> and <strong>Size of 20 px.</strong></p>
+      <img class="img" src="./images/layer-style.jpg" alt="A screenshot of where to find the layer styles dialog" title="Photoshop must come with everything!" width="350" height="375"/>
+      <p class="capt"><i>Photoshop must come with everything!</i></p>
+      <img class="img" src="./images/style-dialog.jpg" alt="A screenshot of the outer glow settings" title="So much power.  But we're just dipping our toes in here." width="500" height="301"/>
+      <p class="capt"><i>So much power.  But we're just dipping our toes in here.</i></p>
+      <p><b>4.</b> Repeat the process for the <em>Stars Close</em> layer, but change the <strong>Outer Glow Size to 10 px</strong>.  This will make the stars brighter and slightly more condensed.  You don't need to repeat this step with <em>Stars Far</em> as they are supposed to be tiny little pinpoints of light already.</p>
+      <p class="protips"><b>Pro-Tip:</b><br />Another way to access the Layer Styles dialog is to double click on the right side of the layer you want to put a style on.  These settings require probably the most fiddling based on your chosen DPI.  You can also create some really weird effects with the Layer Styles Panel, so have fun!</p>
+      <p><b>5.</b> A problem usually occurs when using this technique and that is the overblown outer edge.  The stars along there are distractingly bright, but this is why we broke our stars into seperate layers.  It's an easy fix, too.  Grab your <strong>Eraser tool</strong> and start removing the edge of the image from the <em>Stars Close</em> and <em>Stars Middle</em> layers.  You can use this technique to also reduce the density of the stars more to your liking.  I think our finished image looks pretty swell though, so I think I'll just clean up the edge.</p>
+      <p><b>6.</b> That's it!  Save out your image to your prefered format and enjoy your new stellar vista.</p>
+      <img src="./images/starfield-end.jpg" alt="Our finished starfield." title="And there we are!" width="500" height="281" class="img" />
+      <p class="capt"><i>And there we are!</i></p>
+    </div>
+  </body>
+</html>

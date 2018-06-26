@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="How to Make a Starfield in Photoshop - About Me">
+    <meta name="author" content="Don-Vincent Snell">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+      body {
+        background-color: black;
+        font-family: Arial;
+        margin-top: 50px;
+        }
+      .navbar {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width:100%
+        }
+      .navbar a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+      .navbar a:hover {
+        background-color: black;
+        color: white;
+        }
+      .breaks {
+        color: white;
+        text-align: center;
+        }
+      .submit {
+        display: block;
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 16px 16px;
+        text-decoration: none;
+        font-size: 18;
+        margin-left: auto;
+        margin-right: auto;
+        }
+      .form {
+        background-color: lightgray;
+        color: black;
+        width: 800px;
+        margin: auto;
+        padding: 5px;
+        text-align: left;
+        }
+      #jpl {
+        background-color: gray;
+        text-align: center;
+        color: black;
+        width: 700px;
+        margin: auto;
+        padding: 15px;
+        font-family: Arial;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="header" class="breaks">
+      <div id="floatingbar" class="navbar">
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="../pages/about.html">About Me</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+      <legend>
+        <h1>Reach Out To Me!</h1>
+      </legend>
+      <div id="subform" class="form">
+        <form action="www.example.com" method="get" id="contact" class="contactform">
+          <fieldset>
+            <fieldset>
+              <h4>Contact form</h4>
+            <p>Name</p>
+              <input type="text" name="Name" id="contact-name" placeholder="Name..." size="50"/>
+            <p>Email</p>
+              <input type="text" name="Email" id="contact-email" placeholder="Email Address..." size="50"/>
+            <p>Message</p>
+              <textarea name="Name" id="contact-message" placeholder="Place up to 500 characters here..." maxlength="500" cols="90" rows="8"></textarea>
+          </fieldset>
+          <fieldset>
+            <h4>I'm looking at this tutorial because I'm interested in...(check all that apply)</h4>
+            <input type="checkbox" name="interest" value="art" />Art<br />
+            <input type="checkbox" name="interest" value="space" />Space<br />
+            <input type="checkbox" name="interest" value="photoshop" />Photoshop<br />
+            <input type="checkbox" name="interest" value="skills" />Expanding my skillset<br />
+          </fieldset>
+          <fieldset>
+            <h4>Your skill level with Photoshop is...</h4>
+            <select name="skill-level">
+              <option value="0">Nonexistent</option>
+              <option value="1">Just started</option>
+              <option value="2">Beginner</option>
+              <option value="3">Intermediate</option>
+              <option value="4">Expert</option>
+            </select>
+          </fieldset>
+          <input class="submit" type="submit" name="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+
+</html>
