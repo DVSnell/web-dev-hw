@@ -1,0 +1,77 @@
+/* Ah, the nineties.
+
+If your eyes aren't bleeding.
+it doesn't count.
+
+Also, so many blue jeans...*/
+body {
+  background-image: url("../images/lf-color.png");
+}
+.nickelodeon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.nickelodeon>#edge {
+  position: absolute;
+  width: 930px;
+  height: 623px;
+  opacity: 0.75;
+  transform: translate(-50%, -50%);
+}
+.nickelodeon>#top {
+  position: absolute;
+  width: 870px;
+  height: 583px;
+  transform: translate(-50%, -50%);
+}
+#flannel {
+  position: absolute;
+  margin: inherit;
+  z-index: -2;
+}
+#jeans {
+  position: absolute;
+  margin: inherit;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+/* And now I'm curious about elements that extend past the visible area... */
+.text {
+  background-color: #0d285d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  border: 5px dashed #e45c1f;
+}
+.heading {
+  background-color: #0c2d0d;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  padding: 5px;
+  transform: translate(-50%, -50%);
+  border-radius: 180px;
+  border: 7px dotted #e4d400;
+}
+p, h1 {
+  font-family: Arial;
+  font-size: 24;
+  text-align: center;
+  color: #99c8bd;
+}
+p em {
+  text-align: center;
+  font-size: 36;
+  color: #e45c1f;
+}
+strong {
+  text-align: center;
+  font-size: 36;
+  text-decoration: underline;
+  color: lightblue;
+}
