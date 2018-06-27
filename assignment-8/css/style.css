@@ -1,0 +1,68 @@
+body {
+  background-color: black;
+}
+#bgimage {
+  position: fixed;
+  z-index: -5;
+}
+#name {
+  position: fixed;
+  top: 500px;
+  padding-left: 498px;
+  padding-right: 498px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  white-space: nowrap;
+  z-index: -4;
+}
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-style: oblique;
+  font-variant-caps: small-caps;
+  letter-spacing: -1px;
+}
+#list {
+  position: fixed;
+  top: 0px;
+  left: 430px;
+  text-align: center;
+  white-space: nowrap;
+}
+li {
+  font-family: 'Arial', sans-serif;
+  font-variant-caps: small-caps;
+  display: inline;
+  border: 1px solid white;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: white;
+}
+#gitlink {
+  position: absolute;
+  left: 585px;
+  top: 300px;
+  filter: invert(100%);
+  zindex: 2;
+}
+#gitlink:hover {
+  filter:invert(50%);
+  border: 2px solid black;
+  left: 583px;
+  top: 298px;
+}
+#twitlink {
+  position: absolute;
+  left: 585px;
+  top: 650px;
+  z-index: 1;
+  filter: invert(100%);
+}
+#twitlink:hover {
+  border: 2px solid black;
+  filter: invert(50%);
+  left: 583px;
+  top: 649px;
+}
