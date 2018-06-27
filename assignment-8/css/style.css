@@ -61,8 +61,8 @@ li {
   filter: invert(100%);
 }
 #twitlink:hover {
-  border: 2px solid black;
   filter: invert(50%);
+  border: 2px solid black;
   left: 583px;
   top: 649px;
 }
