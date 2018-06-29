@@ -1,0 +1,152 @@
+* {
+  font-family: 'Arial', sans-serif;
+}
+body {
+  background-color: black;
+}
+.width {
+  width: 1280px;
+  margin: auto;
+}
+.bgimage {
+  position: absolute;
+  z-index: -5;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1280px;
+}
+.name {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 440px;
+  width: 1280px;
+  max-width: 1280px;
+  min-width: 1280px;
+}
+#name {
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  white-space: nowrap;
+  z-index: -4;
+}
+h1 {
+  font-style: oblique;
+  font-variant-caps: small-caps;
+  letter-spacing: -1px;
+}
+.navbar {
+  list-style: none;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  width: 1280px;
+  max-width: 1280px;
+  min-width: 1280px;
+  }
+.navbar li {
+  display: inline;
+  background-color: black;
+  font-family: 'Arial', sans-serif;
+  font-variant: small-caps;
+}
+.navbar a {
+  display: inline-block;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  padding: 0px 40px;
+  text-decoration: none;
+  }
+.navbar a:hover {
+  display: inline-block;
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  padding: 0px 40px;
+  text-decoration: none;
+  background-color: white;
+  font-style: italic;
+  }
+#twitlink {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  top: 750px;
+  z-index: 1;
+  filter: invert(100%);
+}
+#twitlink:hover {
+  filter: invert(50%);
+  border: 2px solid black;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  top: 749px;
+  z-index: 1;
+}
+.infobox {
+  display: block;
+  background-color: lightgrey;
+  color: black;
+  border: 5px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 100px auto;
+  width: 800px;
+  max-width: 800px;
+  min-width: 800px;
+}
+.text-center {
+  text-align: center;
+  font-size: 18;
+  font-variant: small-caps;
+}
+.submit {
+  display: block;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  padding: 16px 25px;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 18;
+  margin-left: auto;
+  margin-right: auto;
+}
+.submit:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  font-style: italic;
+}
+.gallerybox {
+  display: block;
+  background-color: lightgrey;
+  color: black;
+  border: 5px solid black;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin: auto;
+  width: 600px;
+  max-width: 600px;
+  min-width: 600px;
+}
+td {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
